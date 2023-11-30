@@ -1,3 +1,4 @@
+import re
 from django.http import HttpResponse
 from django.shortcuts import render
 
@@ -12,7 +13,8 @@ def chp5(request):
 def harshu(request):
     return HttpResponse("Hello, Harshitha")
 
-"""
+
 def  greet(request, name):
-    return HttpResponse(f"Hello, {name.capitalize()}")
-"""
+    return render(request, "hello/greet.html",{
+        "name":name.capitalize()
+    })
