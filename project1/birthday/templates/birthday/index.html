@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+        <title>Birthday</title>
+        <link href="{% static 'birthday/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+        <h1> is it Harshu's Birthday</h1>
+        {% if birthday %}
+            <h1>Yes, Happy Birthday Harshitha</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+    </body>
+</html>
